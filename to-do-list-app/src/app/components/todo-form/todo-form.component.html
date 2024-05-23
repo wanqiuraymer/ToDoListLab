@@ -1,0 +1,19 @@
+<div class="form-container">
+    <form (ngSubmit)="onSubmit(todoForm)" #todoForm="ngForm">
+        <div>
+            <label>Enter a new task:</label>
+            <input id="task" type="text" [(ngModel)]="task" name="task" required class="form-control">
+        </div>
+        <div>
+            <label>How many hours do you estimate?</label>
+            <input id="duration" type="number" [(ngModel)]="duration" name="duration" required class="form-control">
+        </div>
+        <div>
+            <label>What is the priority level?</label>
+            <label><input type="radio" [(ngModel)]="priority" value="HIGH" name="priority">High</label>
+            <label><input type="radio" [(ngModel)]="priority" value="NORMAL" name="priority">Normal</label>
+            <label><input type="radio" [(ngModel)]="priority" value="LOW" name="priority">Low</label>
+        </div>
+        <button type="submit" class="submit">Add</button>
+    </form>
+</div>

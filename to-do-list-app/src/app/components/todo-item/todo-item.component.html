@@ -1,0 +1,7 @@
+<div class="todo-item" [ngClass]="{'Complete':todo.completed}">
+    <div><button *ngIf="!todo.completed" (click)="markComplete.emit(todo)" class="complete">complete</button>{{todo.task}} ({{ todo.duration }} hr) <p class="priority {{todo.priority}}">{{ todo.priority }} priority</p><button (click)="removeTodo.emit(todo)" class="remove">X</button></div>
+    
+   
+    
+    
+</div>

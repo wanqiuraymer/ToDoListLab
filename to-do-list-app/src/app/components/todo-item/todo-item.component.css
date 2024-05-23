@@ -1,0 +1,21 @@
+.todo-item{
+    font-family: Open Sans;
+    font-weight: 300;
+    background: white;
+    
+
+}
+.todo-item button.complete{
+    color:#ff69b4;
+    border: 1px, solid #ff69b4;
+}
+
+.todo-item.complete{
+    text-decoration: line-through;
+}
+
+.todo-item button.remove{
+    position: relative;
+    color:black;
+
+}
